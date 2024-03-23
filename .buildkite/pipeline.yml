@@ -1,6 +1,6 @@
 steps:
   - label: ":construction_worker: Build"
-    command: echo "Build the rocket"
+    command: echo "Build the rocket by volotus"
     key: build
 
   - label: ":white_check_mark: Test"
