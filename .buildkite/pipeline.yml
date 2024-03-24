@@ -14,3 +14,9 @@ steps:
       cat .buildkite/annotation.md | buildkite-agent annotate --style "success"
     key: deploy
     depends_on: test
+
+  - label: ":rocket: Deploy"
+    command: |
+      touch /tmp/volotus.test
+    key: deploy
+    depends_on: test
